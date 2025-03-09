@@ -1,0 +1,29 @@
+{
+    "title": "Projects",
+    "projects": [
+        {
+            "title": "Steel Hunters",
+            "description": "Owned several hero designs, crafting unique abilities and progression systems. Improved workflows and pipelines to enhance development efficiency and iteration speed.",
+            "link": "https://www.steelhunters.com",
+            "linkText": "View Project"
+        },
+        {
+            "title": "Arma Reforger & Arma 4",
+            "description": "Spearheaded the Game Master system, driving its vision and execution as the key designer. Created a HUD framework and maintained numerous HUD elements for a polished player experience.",
+            "link": "https://www.arma-reforger.com",
+            "linkText": "View Project"
+        },
+        {
+            "title": "Angelic",
+            "description": "Created multiplayer systems and a server for the game’s launcher. Developed frameworks for hero classes and abilities, and designed several hero abilities to enrich gameplay.",
+            "link": "https://www.angelic-game.com",
+            "linkText": "View Project"
+        },
+        {
+            "title": "Cats and the Other Lives",
+            "description": "Built the AI system from scratch and created a visual narrative and storytelling system. Maintained and modified third-party technologies to optimize them for project needs.",
+            "link": "https://store.steampowered.com/app/catsandtheotherlives",
+            "linkText": "View Project"
+        }
+    ]
+}

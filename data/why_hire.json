@@ -1,0 +1,41 @@
+{
+    "title": "Why You Should Hire Me",
+    "subtitle": "With a unique blend of creativity, technical expertise, and problem-solving skills, I bring a rare combination of strengths to every project.",
+    "uspCards": [
+        {
+            "icon": "🏆",
+            "title": "120% Performance Score",
+            "description": "Earned at Bohemia Interactive for exceptional design and leadership, requiring executive approval—a rare distinction."
+        },
+        {
+            "icon": "👥",
+            "title": "Leadership & Team Building",
+            "description": "Inherited the critical Game Master mode from a team of four, iterated it solo, then built and led a team of six, expanding to oversee all HUD elements."
+        },
+        {
+            "icon": "💼",
+            "title": "Entrepreneurial Success",
+            "description": "Co-founded a studio and secured investment, showcasing business acumen and initiative."
+        },
+        {
+            "icon": "💡",
+            "title": "Innovative Design",
+            "description": "Released game modes and hero designs widely praised for creativity and impact."
+        },
+        {
+            "icon": "🔧",
+            "title": "Technical Edge",
+            "description": "Engineering background enables feasible designs, independent scripting, and efficient communication with engineers."
+        },
+        {
+            "icon": "🔄",
+            "title": "Versatility with Proprietary Tech",
+            "description": "Worked with custom engines and languages, proving adaptability and technical skill."
+        },
+        {
+            "icon": "⚡",
+            "title": "Independence & Iteration",
+            "description": "Scripting skills allow rapid feature iteration without reliance on others, streamlining development."
+        }
+    ]
+}
