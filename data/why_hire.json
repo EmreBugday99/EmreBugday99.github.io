@@ -1,41 +1,46 @@
 {
-    "title": "Why You Should Hire Me",
-    "subtitle": "With a unique blend of creativity, technical expertise, and problem-solving skills, I bring a rare combination of strengths to every project.",
+    "title": "Why Me",
+    "subtitle": "With a track record of elevating both creative vision and commercial performance, I bring the expertise and leadership to turn potential into market success.",
     "uspCards": [
         {
+            "icon": "🎖️",
+            "title": "Peer-Recognized Credibility",
+            "description": "Full Member of BAFTA “in recognition of your considerable contribution to our industries”, a distinction awarded by leading figures in the games industry."
+        },
+        {
             "icon": "🏆",
-            "title": "120% Performance Score",
-            "description": "Earned at Bohemia Interactive for exceptional design and leadership, requiring executive approval—a rare distinction."
+            "title": "Proven Over-Achiever",
+            "description": "Delivered above-target results, including a 120% Performance Score at Bohemia Interactive, awarded only with executive approval."
         },
         {
             "icon": "👥",
-            "title": "Leadership & Team Building",
-            "description": "Inherited the critical Game Master mode from a team of four, iterated it solo, then grew to a team of six, expanding to oversee all HUD elements."
+            "title": "Transformational Leadership",
+            "description": "Took over a critical game mode from a four-person team, evolved it solo and expanded it into a high-impact feature supported by a six-person team."
         },
         {
             "icon": "💼",
-            "title": "Entrepreneurial Success",
-            "description": "Co-founded a studio and secured investment, showcasing business acumen and initiative."
+            "title": "Entrepreneurial Drive",
+            "description": "Co-founded a studio, secured investment and led development strategy through pre-production and investor relations."
         },
         {
             "icon": "💡",
-            "title": "Innovative Design",
-            "description": "Released game modes and hero designs widely praised for creativity and impact."
+            "title": "Design Innovation with Impact",
+            "description": "Released game modes and hero designs praised for both creativity and measurable player engagement."
         },
         {
             "icon": "🔧",
-            "title": "Technical Edge",
-            "description": "Engineering background enables feasible designs, independent scripting, and efficient communication with engineers."
+            "title": "Technical-Creative Bridge",
+            "description": "Engineering background enables feasible, performant designs and seamless collaboration with developers."
         },
         {
             "icon": "🔄",
-            "title": "Versatility with Proprietary Tech",
-            "description": "Worked with custom engines and languages, proving adaptability and technical skill."
+            "title": "Proprietary Tech Versatility",
+            "description": "elivered results across multiple custom engines and scripting languages with minimal ramp-up."
         },
         {
             "icon": "⚡",
-            "title": "Independence & Iteration",
-            "description": "Scripting skills allow rapid feature iteration without reliance on others, streamlining development."
+            "title": "Agile, Independent Delivery",
+            "description": "Rapid feature prototyping and iteration without reliance on external resources."
         }
     ]
 }

@@ -3,25 +3,25 @@
     "projects": [
         {
             "title": "Steel Hunters",
-            "description": "Owned several hero designs, crafting unique abilities and progression systems. Improved workflows and pipelines to enhance development efficiency and iteration speed.",
+            "description": "Designed and shipped multiple heroes with distinctive abilities and progression loops, enriching meta diversity. Applied telemetry-driven balancing and iteration, boosting Day-7 retention for newly released heroes.",
             "link": "https://store.steampowered.com/app/1691340/STEEL_HUNTERS/",
             "linkText": "View Project"
         },
         {
             "title": "Arma Reforger & Arma 4",
-            "description": "Spearheaded the Game Master system, driving its vision and execution as the key designer. Created a HUD framework and maintained numerous HUD elements for a polished player experience.",
+            "description": "Directed vision and execution of the Game Master sandbox mode, empowering dynamic, player-driven scenarios. Rebuilt the cross-platform HUD, improving onboarding and stability for millions of players.",
             "link": "https://store.steampowered.com/app/1874880/Arma_Reforger/",
             "linkText": "View Project"
         },
         {
             "title": "Angelic",
-            "description": "Created multiplayer systems and a server for the game’s launcher. Developed frameworks for hero classes and abilities, and designed several hero abilities to enrich gameplay.",
+            "description": "Developed multiplayer systems and backend for the game’s launcher, streamlining player access. Built hero class and ability frameworks, delivering unique hero abilities to enhance tactical depth.",
             "link": "https://store.steampowered.com/app/1440570/Angelic_The_Chaos_Theatre/",
             "linkText": "View Project"
         },
         {
             "title": "Cats and the Other Lives",
-            "description": "Built the AI system from scratch and created a visual narrative and storytelling system. Maintained and modified third-party technologies to optimize them for project needs.",
+            "description": "Engineered AI from the ground up and built a visual storytelling system to drive narrative gameplay. Optimized third-party tools, improving performance and production workflows.",
             "link": "https://store.steampowered.com/app/1360390/Cats_and_the_Other_Lives/",
             "linkText": "View Project"
         }
