@@ -1,0 +1,17 @@
+import { Scene } from "./scene.js";
+import { AboutMeComponent } from "./page_components/about_me.js";
+import { WhyHireComponent } from "./page_components/why_hire.js";
+import { ProjectsComponent } from "./page_components/projects.js";
+import { SkillsComponent } from "./page_components/skills.js";
+import { ClientsComponent } from "./page_components/clients.js";
+const home = new Scene("HomeScene");
+const aboutMe = home.createEntity("AboutMe");
+aboutMe.add(new AboutMeComponent("PageComponent", aboutMe));
+const whyHire = home.createEntity("WhyHire");
+whyHire.add(new WhyHireComponent("PageComponent", whyHire));
+const projects = home.createEntity("Projects");
+projects.add(new ProjectsComponent("PageComponent", projects));
+const skills = home.createEntity("Skills");
+skills.add(new SkillsComponent("PageComponent", skills));
+const clients = home.createEntity("Clients");
+clients.add(new ClientsComponent("PageComponent", clients));

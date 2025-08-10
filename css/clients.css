@@ -1,0 +1,67 @@
+/* Clients (minimal, matches renderers.ts) */
+#clients {
+  background: linear-gradient(135deg, #F5F6F5 0%, #FDFDFB 100%);
+}
+
+#clients h2 {
+  font-size: 2.8em;
+  color: #006666;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 700;
+}
+
+#clients .client-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+#clients .client {
+  background: rgba(160, 214, 214, 0.1);
+  border-radius: 10px;
+  padding: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#clients .client:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+#clients .client h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2em;
+  color: #006666;
+  font-weight: 700;
+}
+
+#clients .client p {
+  margin: 0 0 12px 0;
+  color: #4A4E69;
+  line-height: 1.6;
+  font-size: 0.95em;
+}
+
+#clients .client a {
+  display: inline-block;
+  padding: 8px 14px;
+  color: #006666;
+  border: 2px dashed #006666;
+  /* subtle difference vs. other sections */
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+#clients .client a:hover {
+  background: #006666;
+  color: #FDFDFB;
+}
+
+/* Mobile: stack to single column */
+@media (max-width: 768px) {
+  #clients .client-grid {
+    grid-template-columns: 1fr;
+  }
+}
