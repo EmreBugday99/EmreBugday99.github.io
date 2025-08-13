@@ -1,0 +1,14 @@
+{
+  "name": "emrebugday99.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -w -p tsconfig.json",
+    "clean": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"if (Test-Path 'js') { Remove-Item -Recurse -Force 'js/*' }\""
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
