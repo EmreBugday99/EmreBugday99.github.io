@@ -1,20 +1,20 @@
-#projects {
+#credits {
     padding-top: 50px;
 }
 
-#projects h2 {
+#credits h2 {
     font-size: 2em;
     color: #006666;
     text-align: center;
 }
 
-#projects .project-grid {
+#credits .credits-grid {
     display: grid;
     gap: 30px;
     padding-top: 20px;
 }
 
-#projects .project {
+#credits .credit {
     background: rgba(160, 214, 214, 0.1);
     padding: 20px;
     border-radius: 20px;
@@ -22,15 +22,15 @@
     transition: all 0.5s ease;
 }
 
-#projects .project:hover {
+#credits .credit:hover {
     transform: scale(1.05);
 }
 
-#projects .project h3 {
+#credits .credit h3 {
     font-size: 1.5em;
     color: #4A4E69;
 }
 
-#projects .project p {
+#credits .credit p {
     margin-bottom: 15px;
 }

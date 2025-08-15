@@ -1,66 +1,22 @@
 /* Compact Header */
 header {
     background: #FDFDFB;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     font-size: 2em;
-    font-weight: 700;
     color: #006666;
     text-align: center;
     margin-bottom: 5px;
 }
 
 header p {
-    font-size: 1em;
-    color: #5C6370;
     text-align: center;
-    line-height: 1.4;
 }
 
-nav {
-    margin-top: 10px;
-}
-
-nav ul {
+header nav {
     display: flex;
     justify-content: center;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #4A4E69;
-    text-decoration: none;
-    font-size: 1em;
-    position: relative;
-    transition: color 0.3s;
-}
-
-nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: #006666;
-    bottom: -8px;
-    left: 0;
-    transition: width 0.3s;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-}
-
-nav ul li a:hover {
-    color: #006666;
+    padding: 10px;
 }

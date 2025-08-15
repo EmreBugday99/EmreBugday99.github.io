@@ -1,17 +1,14 @@
 import { Scene } from "./scene.js";
-import { AboutMeComponent } from "./page_components/about_me.js";
-import { WhyHireComponent } from "./page_components/why_hire.js";
-import { ProjectsComponent } from "./page_components/projects.js";
-import { SkillsComponent } from "./page_components/skills.js";
-import { ClientsComponent } from "./page_components/clients.js";
+import { AboutMeNavigator } from "./navigators/about_me_navigator.js";
+import { ProjectsNavigator } from "./navigators/projects_navigator.js";
+import { CreditsNavigator } from "./navigators/credits_navigator.js";
+import { ClientsNavigator } from "./navigators/clients_navigator.js";
 const home = new Scene("HomeScene");
-const aboutMe = home.createEntity("AboutMe");
-aboutMe.add(new AboutMeComponent("PageComponent", aboutMe));
-const whyHire = home.createEntity("WhyHire");
-whyHire.add(new WhyHireComponent("PageComponent", whyHire));
-const projects = home.createEntity("Projects");
-projects.add(new ProjectsComponent("PageComponent", projects));
-const skills = home.createEntity("Skills");
-skills.add(new SkillsComponent("PageComponent", skills));
-const clients = home.createEntity("Clients");
-clients.add(new ClientsComponent("PageComponent", clients));
+const navigationEntity = home.createEntity("Navigation");
+navigationEntity.add(new AboutMeNavigator("#about-me-btn", "AboutMeNavigator", navigationEntity)).then(aboutMeNavigatorComponent => {
+    // Setting about me as default page
+    aboutMeNavigatorComponent.onNavigate(aboutMeNavigatorComponent);
+});
+navigationEntity.add(new ProjectsNavigator("#projects-btn", "ProjectsNavigator", navigationEntity));
+navigationEntity.add(new CreditsNavigator("#credits-btn", "CreditsNavigator", navigationEntity));
+navigationEntity.add(new ClientsNavigator("#clients-btn", "ClientsNavigator", navigationEntity));

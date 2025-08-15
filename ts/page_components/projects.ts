@@ -1,30 +1,21 @@
 import { Component } from "../component.js";
-import { OverrideMode } from "../components/documentOverrider.js";
-import { FetchJsonComponent } from "../components/fetch.js";
-import { FetchDocumentOverrideConfig } from "../components/fetchDocumentOverrideConfig.js";
-import { FetchDocumentOverrider } from "../components/fetchDocumentOverrider.js";
-import { SelectorComponent } from "../components/selector.js";
-import { ProjectsData } from "../data/types.js";
-import { renderProjects } from "../templates/renderers.js";
 
 export class ProjectsComponent extends Component {
-    init(): void {
-        const fetcher = this.entity.add(new FetchJsonComponent("fetchProjects", this.entity));
-        const selector = this.entity.add(new SelectorComponent("selectProjects", this.entity));
-        this.entity.add(new FetchDocumentOverrider<ProjectsData>(
-            "overrideProjects",
-            this.entity,
-            fetcher,
-            selector,
-            new FetchDocumentOverrideConfig<ProjectsData>(
-                "data/projects.json",
-                "#projects",
-                renderProjects,
-                OverrideMode.InnerHTML
-            )
-        ));
+    init(): Promise<void> {
+        return fetch("pages/projects.html")
+            .then(res => res.text())
+            .then(html => {
+                const tempDiv = document.createElement("div");
+                tempDiv.innerHTML = html;
+                const nodes = Array.from(tempDiv.childNodes);
+                nodes.forEach(node => document.body.appendChild(node));
+            });
     }
 
-    destroy(): void {
+    destroy(): Promise<void> {
+        const element = document.querySelector("#projects");
+        if (element)
+            element.remove();
+        return Promise.resolve();
     }
 }

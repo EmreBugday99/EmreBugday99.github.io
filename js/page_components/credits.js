@@ -1,7 +1,7 @@
 import { Component } from "../component.js";
-export class ProjectsComponent extends Component {
+export class CreditsComponent extends Component {
     init() {
-        return fetch("pages/projects.html")
+        return fetch("pages/credits.html")
             .then(res => res.text())
             .then(html => {
             const tempDiv = document.createElement("div");
@@ -11,7 +11,7 @@ export class ProjectsComponent extends Component {
         });
     }
     destroy() {
-        const element = document.querySelector("#projects");
+        const element = document.querySelector("#credits");
         if (element)
             element.remove();
         return Promise.resolve();

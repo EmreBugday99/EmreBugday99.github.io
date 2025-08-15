@@ -1,38 +1,45 @@
 export class Entity {
-    constructor(id) {
+    constructor(id, scene) {
         this.id = id;
         this.components = [];
         this.identifier = id;
+        this.scene = scene;
     }
     getIdentifier() {
         return this.identifier;
     }
-    add(component) {
+    getScene() {
+        return this.scene;
+    }
+    async add(component) {
         if (this.components.some(c => c.getIdentifier() === component.getIdentifier())) {
             throw new Error(`Component with identifier ${component.getIdentifier()} already exists.`);
         }
         this.components.push(component);
-        component.init();
+        await component.init();
         return component;
     }
-    remove(component) {
+    async remove(component) {
         const i = this.components.indexOf(component);
         if (i === -1) {
             return false;
         }
-        component.destroy();
+        await component.destroy();
         this.components.splice(i, 1);
         return true;
     }
-    clear() {
-        this.components.forEach(component => component.destroy());
+    async clear() {
+        await Promise.all(this.components.map(component => component.destroy()));
         this.components = [];
     }
-    has(component) {
+    hasComponent(component) {
         return this.components.includes(component);
     }
+    hasComponentWithName(name) {
+        return this.components.some(component => component.getIdentifier() === name);
+    }
     getComponent(identifier) {
-        return this.components.find(c => c.getIdentifier() === identifier);
+        return this.components.find(component => component.getIdentifier() === identifier);
     }
     getComponents() {
         return this.components;

@@ -2,7 +2,7 @@ import { Entity } from "./entity.js";
 
 export abstract class Component {
     private identifier: string;
-    protected entity: Entity;
+    public entity: Entity;
 
     constructor(id: string, owner: Entity) {
         this.identifier = id;
@@ -13,6 +13,6 @@ export abstract class Component {
         return this.identifier;
     }
 
-    abstract init(): void;
-    abstract destroy(): void;
+    abstract init(): Promise<void>;
+    abstract destroy(): Promise<void>;
 }
